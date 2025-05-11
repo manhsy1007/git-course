@@ -1,0 +1,3 @@
+- câu lệnh để cài đặt email: git config user.email "domanhsy10012001@gmail.com"
+- câu lệnh để cài đặt username: git config user.name "manh sy"
+- setup tên: git config user.name "PW - Manh Sy"
