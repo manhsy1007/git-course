@@ -1,0 +1,25 @@
+1. Câu lệnh:
+- git commit --amend: thay đổi commit message-> gõ i-> vào chế độ insert -> gõ esc để thoát insert-> gõ :wq -> write and quit 
+- git commit --amend -m"message": thay đổi commit message luôn mà không cần mở text editor
+- git restore --staged <file>: đưa file từ vùng staging về working directory 
+- git reset HEAD~1: đưa file từ vùng repository về working directory
+
+2. a, tạo 3 file: file1, file2, file3 3 file mới tạo sẽ ở trên local 
+b, chạy lệnh git init: 3 file mới tạo sẽ ở vùng working directory 
+c, chạy lệnh git commit -m"init project": 3 file vẫn ở vùng working directory do chưa có lệnh git add.
+d, chạy lệnh git add file1: file 1 ở vùng staging, file2 , file3 ở vùng working directory
+e, chạy lệnh git commit -m"add file": file 1 ở vùng repository, file2 , file3 ở vùng working directory
+f, chạy lệnh git add .: cả 3 file ở vùng staging
+g, chạy lệnh git restore --staged file2: đưa file 2 từ vùng staging về working directory
+h, chạy lệnh git commit -m" add all files": có file1 file3 ở vùng repository, file2 chưa git add . nên chưa lên vùng staging
+i, chạy lệnh: git reset HEAD~1: đưa file1 từ vùng repository về working directory
+
+3. tạo folder lesson-3-git:
+a, chạy lệnh git init: khởi tạo repository git với folder trống chưa có file
+b, tạo file1.txt, file2.txt, oops/file3.txt: 3 file đã ở vùng working directory
+c, thêm file .gitignore, thêm vào 2 dòng
+i, file1.txt
+ii, oops/file3.txt
+vùng working directory có 4 file, 3 file lúc đầu và thêm 1 file .gitignore
+d, chạy lệnh git add .: vùng staging có 2 file: file2/txt và .gitignore vì 2 file kia đã được thêm vào gitignore
+e, chạy lệnh git commit -m"init project": đưa 2 file: file2/txt và .gitignore lên vùng repository
