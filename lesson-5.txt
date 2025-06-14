@@ -1,0 +1,14 @@
+1. Cấu trúc DOM cơ bản của 1 trang web bao gồm các thẻ:
+Thẻ HTML	    Vai trò
+<!DOCTYPE html>	Khai báo tài liệu HTML5
+<html>	        Gốc của toàn bộ tài liệu HTML
+<head>	        Chứa thông tin cấu hình: meta, title, link, script...
+<body>	        Chứa nội dung hiển thị trên trang
+<header>	    Phần đầu của trang (logo, tiêu đề, menu)
+<nav>	        Menu điều hướng
+<main>	        Nội dung chính của trang
+<section>	    Một vùng nội dung có chủ đề cụ thể
+<article>	    Một bài viết độc lập
+<aside>	        Nội dung phụ: liên kết, quảng cáo
+<footer>	    Phần cuối trang: liên hệ, bản quyền
+<script>	    Chèn file JavaScript
